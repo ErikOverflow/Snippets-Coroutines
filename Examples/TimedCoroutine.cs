@@ -1,12 +1,13 @@
 class TimedCoroutine : MonoBehaviour
 {
+    var waitForSeconds = new WaitForSeconds(1);
     IEnumerator CountdownToAction()
     {
         int countdown = 5;
         while(countdown >= 0)
         {
             print(countdown--);
-            yield return new WaitForSeconds(1);
+            yield return waitForSeconds;
         }
         //Perform action here
     }
