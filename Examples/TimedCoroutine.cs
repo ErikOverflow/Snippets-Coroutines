@@ -8,9 +8,14 @@ class TimedCoroutine : MonoBehaviour
             print(countdown--);
             yield return new WaitForSeconds(1);
         }
-        //Load a new scene
-        //Player respawn timer
-        //Close a door after x seconds
-        //reload delay
+        //Perform action here
     }
 }
+
+/* 
+ * Examples: 
+ * - Loading a new scene or level
+ * - Close a door/object
+ * - Add a reload delay to a weapon
+ * - Respawn timer
+ * /
